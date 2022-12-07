@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Johnny Proano</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Johnny Proano">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+        <link href="styles.css" rel="stylesheet" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Didact+Gothic&family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body class="scroll-top"
+    data-bs-spy="scroll"
+    data-bs-target=".navbar">
+
+        <!-- Nav Bar----->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a href="#hero-section" class="navbar-brand">
+                    <i class="bi bi-house"></i>
+                </a>
+
+                <button class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#nav-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+    
+                <div id="nav-collapse" class="collapse navbar-collapse">
+                    <div class="navbar-nav ">
+                        <a href="#test" class="nav-link">Mission</a>
+                        <a href="#skills-section" class="nav-link">Skills</a>
+                        <a href="#projects-section" class="nav-link">Projects</a>
+                        <a href="#contact-section" class="nav-link">Contact</a>
+                    </div>
+                    <div class="container dark-txt">
+                        <section id="contact-svg">
+                          <i class="bi bi-linkedin"></i>
+                          <i class="bi bi-github"></i>
+                          <i class="bi bi-envelope-fill"></i>
+                        </section>
+                    </div>
+                </div>    
+            </div>
+        </nav>
+
+        <!--Hero Section------->
+        <header class="header">
+            <section class="" id="hero-section">
+                <div class="heroBanner">
+                    <h1>Think it. Code it. <br>
+                        Make a <span>difference!</span></h1>
+                    <h2>Full Stack Developer</h2>
+                </div>
+                <img src="img/Headshot-4.png" width="200px" class="img-jp">
+            </section>
+        </header>
+
+        <!--Mission------------>
+        <main class="main">
+            <section id="mission-section">
+                <div class="inner-content">
+                    <h2>Mission</h2>
+
+                    <p>There is no better feeling than to make a difference in people’s lives, especially through code. I’m committed to applying the foundations of development and engineering to deliver a great user experience.  <br>
+                    
+                    Think it, code it, make a difference! </p>
+                </div>
+                <img src="img/setup.JPG" class="setup">
+            </section>
+    
+
+        <!--Skills-------------->    
+            <section id="skills-section">
+                <div class="inner-content">
+
+                    <h2>Skills and Toolbox</h2>
+
+                    <section id="skills-logo">
+                        <img src="skills-img/html5.png" alt="html5 logo">
+                        <p>Structuring the web's content using modern semantic HTML</p>
+                    </section>
+
+                    <section id="skills-logo">
+                        <img src="skills-img/css3.png" alt="css3 logo" class="css">
+                        <p>Presenting beautiful web designs and interations using modern CSS</p>
+                    </section>
+
+                    <section id="skills-logo">
+                        <img src="skills-img/bootstrap.png" alt="bootstrap logo" class="rotate">
+                        <p>Rapidly developing responsive websites using the web's most popular framework</p>
+                    </section>
+
+                    <section id="skills-logo">
+                        <img src="skills-img/javascript.png" alt="javascript logo" id="js" class="rotate">
+                        <p>Making interactive experiences, games, web apps, and more using JavaScript</p>
+                    </section>
+                </div>
+            </section>
+
+            <!--Projects------------->
+            <section id="projects-section">
+                <div class="inner-content">
+                    <h2>Projects</h2>
+                    <p>Take a peek at some of my work</p>
+                </div>
+            </section>
+
+            <!--Contact------------->
+            <section id="contact-section">
+                <div class="inner-content contact-wrapper">
+                    <h2>Contact</h2>
+            
+                    <section class="form-area">
+                        <div class="contact-left"></div>
+                        <div class="contact-right">
+                            <h1 class="content-heading"></h1>
+                            
+                            <!--form------------>
+                            <form>
+                                <div class="input-group">
+                                    <label class="input-label">First name*</label>
+                                    <input 
+                                        type="text" 
+                                        class="form-element"
+                                        placeholder="Peter"
+                                        required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="input-label">Last name*</label>
+                                    <input 
+                                        type="text" 
+                                        class="form-element"
+                                        placeholder="Parker"
+                                        required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="input-label">Email*</label>
+                                    <input 
+                                        type="email" 
+                                        class="form-element"
+                                        placeholder="peterparker@marvel.com"
+                                        required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="message">How can I help?*</label>
+                                    <textarea name="message" id="message" class="form-element" placeholder="Let's connect!" required></textarea>
+                                </div>
+
+                                <div class="submit-group">
+                                    <input 
+                                        type="submit" 
+                                        class="submitbtn" 
+                                        value="Send message">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+
+                    <section id="contact-svg">
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope-fill"></i>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+
+    </body>
+
+</html>

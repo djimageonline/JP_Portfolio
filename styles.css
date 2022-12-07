@@ -1,0 +1,244 @@
+body {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    background-color: #F2F2F0;
+    color: #1B0E73;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16pt;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif; 
+    font-size: 25pt;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/**************  NavBar ***************/
+.navbar {
+    background-color: #F2F2F0;
+    font-family: 'Anton', sans-serif; 
+}
+
+.navbar-toggler-icon {
+font-size: small;
+color: #1B0E73;
+}
+
+.navbar-nav a{
+    color: #F5E883;
+    text-shadow: 0 0 3px #1B0E73, 0 0 5px #1B0E73;
+    text-align: center;
+    padding-bottom: 10px;
+    }
+
+
+/**************  Hero Section ***************/
+
+.header {
+    perspective: 100rem;
+    overflow: hidden;
+}
+
+.heroBanner h1 {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40pt;
+    font-family: 'Anton', sans-serif; 
+    font-weight: bold;
+    opacity: 0;
+    animation: moveThinkItBanner 1s .5s forwards;
+    
+
+}
+
+.heroBanner h2 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    opacity: 0;
+    animation: moveThinkItBanner 1s .7s forwards;
+}
+
+#hero-section span {
+    color: #F5E883;
+    text-shadow: 0 0 3px #1B0E73, 0 0 5px #1B0E73;
+}
+
+#hero-section .img-jp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} 
+
+@keyframes moveThinkItBanner {
+    0% {
+        transform: translateY(40rem)
+        rotateY(-20deg);
+    }
+    100% {
+        transform: translateY(0)
+        rotateY(0);
+        opacity: 1;
+    }
+}
+
+/**************  Mission Section ***************/
+
+#mission-section {
+    background-color: #F5E883;
+
+}
+
+.inner-content {
+    padding: 40px;
+}
+
+.setup {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 30px;
+}
+
+/**************  Skills Section ***************/
+
+section#skills-logo{
+    text-align: left;
+    padding: 10px;
+    padding-right: 5px;
+}
+
+section#skills-logo img{
+    width: 100px;
+    padding: 5px;
+}
+
+section#skills-logo p{
+    display: inline;
+    text-align: right;
+    float: right;
+    padding-top: 5px;
+    margin-top: -100px;
+    margin-left: 110px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+/**************  Projects Section ***************/
+
+#projects-section {
+    background-color: #1B0E73;
+    color: #F5E883;
+
+}
+
+
+/**************  Contact Section-Navbar ***********/
+
+
+
+#contact-section {
+    width: 100%;
+    height: 100%vh;
+    background-color: #F5E883;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    
+}
+
+@media(min-width: 768px) {
+    form{
+    grid-template-columns: repeat (2, 1fr);
+    }
+}
+
+form .input-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .input-group .form-element {
+    appearance: none;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #F2F2F0;
+    border-radius: 10px;
+    transition: .04s;
+}
+
+form .input-group .form-element:focus {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    background-color: #F5E883;
+}
+
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.submit-group {
+    text-align: center;
+}
+
+.submit-group input[type="submit"] {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 12px 16px;
+    background-color: #1B0E73;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+.submit-group input[type="submit"]:hover {
+    background-color: #F5E883;
+    color: #1B0E73;
+}
+
+
+section#contact-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#contact-svg i {
+    font-size: 20px;
+    margin: 10px;
+    color: #1B0E73;
+    transition-duration: .3s;
+}
+
+section#contact-svg i:hover {
+    color: #F5E883;
+    text-shadow: 0 0 3px #1B0E73;
+}
