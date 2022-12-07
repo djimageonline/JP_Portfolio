@@ -34,7 +34,7 @@ color: #1B0E73;
 
 .navbar-nav a{
     color: #F5E883;
-    text-shadow: 0 0 3px #1B0E73, 0 0 5px #1B0E73;
+    text-shadow: 0 0 3px #0e4473, 0 0 1px #1B0E73;
     text-align: center;
     padding-bottom: 10px;
     }
@@ -125,7 +125,7 @@ section#skills-logo img{
 }
 
 section#skills-logo p{
-    display: inline;
+    display: inline-block;
     text-align: right;
     float: right;
     padding-top: 5px;
@@ -229,6 +229,7 @@ section#contact-svg {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 section#contact-svg i {
