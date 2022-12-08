@@ -86,7 +86,8 @@ div .social-link #contact-svg {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-} 
+}
+
 
 @keyframes moveThinkItBanner {
     0% {
@@ -147,6 +148,41 @@ section#right-skills{
 
 }
 
+#projects-section img {
+    border-radius: 16px;
+    padding-bottom: 5px;
+    transition: transform 0.25s;
+}
+
+#projects-section img:hover{
+    transform: scale(1.1);
+  }
+
+  @media (min-width: 765px) {
+    
+    section #main-project-container {
+        display: flex;
+    }
+    
+    section#left-img{    
+        float: left;
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+    
+    #projects-section img {
+        border-radius: 16px;
+        transition: transform 0.25s;
+    }
+    section#right-img{
+        float: right;
+        margin: 0 auto;
+        margin-left: 30px;
+    }
+    #projects-section img:hover{
+        transform: scale(1.5);
+      }
+  }
 
 /**************  Contact Section-Navbar ***********/
 
