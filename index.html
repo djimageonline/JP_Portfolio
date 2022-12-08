@@ -152,11 +152,12 @@
                             <h1 class="content-heading"></h1>
                             
                             <!--form------------>
-                            <form>
+                            <form method="post" action="contact.php">
                                 <div class="input-group">
                                     <label class="input-label">First name*</label>
                                     <input 
-                                        type="text" 
+                                        type="text"
+                                        id="first-name" 
                                         class="form-element"
                                         placeholder="Peter"
                                         required>
@@ -165,7 +166,8 @@
                                 <div class="input-group">
                                     <label class="input-label">Last name*</label>
                                     <input 
-                                        type="text" 
+                                        type="text"
+                                        id="last-name"  
                                         class="form-element"
                                         placeholder="Parker"
                                         required>
@@ -174,7 +176,8 @@
                                 <div class="input-group">
                                     <label class="input-label">Email*</label>
                                     <input 
-                                        type="email" 
+                                        type="email"
+                                        id="email" 
                                         class="form-element"
                                         placeholder="peterparker@marvel.com"
                                         required>
