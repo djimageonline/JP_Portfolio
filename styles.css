@@ -39,6 +39,14 @@ color: #1B0E73;
     padding-bottom: 10px;
     }
 
+.display-section {
+    padding-top: 10px;
+}
+
+div .social-link #contact-svg {
+    float:right;
+}
+
 
 /**************  Hero Section ***************/
 
@@ -113,15 +121,21 @@ color: #1B0E73;
 
 /**************  Skills Section ***************/
 
-section#skills-logo{
-    text-align: left;
-    padding: 10px;
-    padding-right: 5px;
+section #main-container {
+    display: flex;
 }
 
-section#skills-logo img{
-    width: 100px;
-    padding: 5px;
+section#left-skills{    
+    float: left;
+    margin: 0 auto;
+    margin-right: 30px;
+}
+
+section#right-skills{
+    float: right;
+    margin: 0 auto;
+    margin-left: 30px;
+
 }
 
 
@@ -157,16 +171,12 @@ form {
     
 }
 
-@media(min-width: 768px) {
-    form{
-    grid-template-columns: repeat (2, 1fr);
-    }
-}
-
 form .input-group label{
     display: block;
     margin-bottom: 5px;
 }
+
+
 
 form .input-group .form-element {
     appearance: none;
@@ -185,6 +195,12 @@ form .input-group .form-element:focus {
     background-color: #F5E883;
 }
 
+@media(min-width: 768px) {
+    form {
+    grid-template-columns: repeat (2, 1fr);
+    
+    }
+}
 
 textarea {
     resize: none;
