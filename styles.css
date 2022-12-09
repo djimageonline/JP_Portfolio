@@ -155,7 +155,7 @@ section#right-skills{
 }
 
 #projects-section img:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
 
   @media (min-width: 765px) {
@@ -180,7 +180,7 @@ section#right-skills{
         margin-left: 30px;
     }
     #projects-section img:hover{
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
   }
 
