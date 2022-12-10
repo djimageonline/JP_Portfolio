@@ -172,7 +172,7 @@ section#right-skills{
     
     #projects-section img {
         border-radius: 16px;
-        transition: transform 0.25s;
+        transition: transform 0.55s;
     }
     section#right-img{
         float: right;
