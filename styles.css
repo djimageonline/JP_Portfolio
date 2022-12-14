@@ -158,6 +158,7 @@ section#right-skills{
     transform: scale(1.5);
   }
 
+  /* adjustment for size of screen */
   @media (min-width: 765px) {
     
     section #main-project-container {
@@ -182,6 +183,7 @@ section#right-skills{
     #projects-section img:hover{
         transform: scale(1.2);
       }
+      
   }
 
 /**************  Contact Section-Navbar ***********/
@@ -194,6 +196,9 @@ section#right-skills{
     background-color: #F5E883;
 }
 
+.inner-content {
+    width:100%;
+}
 
 form {
     display: grid;
@@ -232,10 +237,13 @@ form .input-group .form-element:focus {
 }
 
 @media(min-width: 768px) {
+  
     form {
     grid-template-columns: repeat (2, 1fr);
-    
+    margin-right: 160px;
+    margin-left: 160px;
     }
+
 }
 
 textarea {
