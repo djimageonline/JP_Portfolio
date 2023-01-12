@@ -66,13 +66,12 @@
                 </div>
                 
                 <div id="typed-container">
-                    <h3>Johnny Proano
-                        <h4>
-                            <a href="" class="typewrite" data-period="2000" data-type='["I am a Software Engineer.", "I code.", "I Love Music.","I build stuff."]'>
-                              <span class="wrap"></span>
-                            </a>
-                        </h4>
-                    </h3>
+                    <h3>Johnny Proano</h3>
+                    <h4>
+                        <a href="" class="typewrite" data-period="2000" data-type='["I am a Software Engineer.", "I code.", "I Love Music.","I build stuff."]'>
+                          <span class="wrap"></span>
+                        </a>
+                    </h4>
                    
                 </div>
                 
@@ -146,14 +145,98 @@
             <section id="projects-section">
                 <div class="inner-content">
                     <h2>Projects</h2>
-                    <section id="main-project-container">
-                        <section id="left-img">
-                            <a href="https://github.com/djimageonline/Mad-Libs-Game"><img src="img/Madlibsv2.png" width="400"></a>
-                        </section>
-                        <section id="right-img">
-                            <a href="https://github.com/djimageonline/Disney-Match_Game"><img src="img/Matchgame.png" width="400"></a>
-                        </section>
-                    </section>
+                    <ul class="cards">
+                        <li class="cards__item">
+                          <div class="card">
+                            <div class="card__image card_brewr"></div>
+                            <div class="card__content">
+                              <div class="card__title">BrewR</div>
+                              <p class="card__text">Ok.  I love a good beer.  I love to try out new spots!  BrewR allows users to login/signup, create a tour with user added breweries and breweries sourced through "the Beer Mapping API" by searching city and state. Backend RESTful API built with Ruby on Rails.  Frontend built with npm, webpack, React.js, Swiper, HTML, and CSS. Secure authenticated user profiles using JSON web tokens.
+                                </p>
+                            <div class="btn_container">
+                                <form action="https://github.com/djimageonline/BrewR" method="get" target="_blank">
+                                    <button class="btn btn--block card__btn" >GitHub-Back</button>
+                                </form>
+                                <form action="https://github.com/djimageonline/brewr-front" method="get" target="_blank">
+                                    <button class="btn btn--block card__btn" >GitHub-Front</button>
+                                </form>
+                                <form action="" method="get" target="_blank">
+                                    <button class="btn card__btn">Demo</button>
+                                </form>
+                            </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cards__item">
+                          <div class="card">
+                            <div class="card__image card_disney_clone"></div>
+                            <div class="card__content">
+                              <div class="card__title">Disney Plus Clone</div>
+                              <p class="card__text">A responsive clone of disney plus in React with styled components. Utilized Firebase to create and store content databases and Redux to store the state. Firebase used to authenticate users with google email: Login and Logout.</p>
+                              <div class="btn_container">
+                                <form action="https://github.com/djimageonline/Disney-clone" method="get" target="_blank">
+                                    <button class="btn btn--block card__btn" >GitHub</button>
+                                </form>
+                                <form action="https://disneyplus-clone-ny-jp.netlify.app" method="get" target="_blank">
+                                    <button class="btn card__btn">Demo</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cards__item">
+                          <div class="card">
+                            <div class="card__image card_match_game"></div>
+                            <div class="card__content">
+                              <div class="card__title">Disney Match Game</div>
+                              <p class="card__text">Inspired by my kiddos, built a Disney match game with JavaScript, HTML & CSS for a school project.  Utilized DOM Manipulation to return card images when flipped,  display the best time feature, and the “You Won” message.  Try to beat your last time!</p>
+                              <div class="btn_container">
+                                <form action="https://github.com/djimageonline/Disney-Match_Game" method="get" target="_blank">
+                                    <button class="btn btn--block card__btn" >GitHub</button>
+                                </form>
+                                <form action="https://disney-match-game.netlify.app/" method="get" target="_blank">
+                                    <button class="btn card__btn">Demo</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="cards__item">
+                          <div class="card">
+                            <div class="card__image card_mad_libs"></div>
+                            <div class="card__content">
+                              <div class="card__title">Mad Libs</div>
+                              <p class="card__text">Loved Mad Libs as a kid. Utilized Semantic HTML and CSS.  User provids "blank" words and app return a funny story with the user word choices.  Future implementation includes a feature that prompts a user to select a story, or enable the program to choose at random, by utilizing MongoDB to pull stored storylines.</p>
+                              <div class="btn_container">
+                                <form action="https://github.com/djimageonline/Mad-Libs-Game" method="get" target="_blank">
+                                    <button class="btn btn--block card__btn" >GitHub</button>
+                                </form>
+                                <form action="" method="get" target="_blank">
+                                    <button class="btn card__btn">Demo</button>
+                                </form>
+                            </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+
+                    <!-- <section id="main-project-container">
+                        <div class="cards">
+                            <section class="card">
+                                <a href="https://github.com/djimageonline/Mad-Libs-Game"><img class="img-projects" src="img/Madlibsv2.png" width="400"></a>
+                            </section>
+                            <section class="card">
+                                <a href="https://github.com/djimageonline/Disney-Match_Game"><img class="img-projects" src="img/Matchgame.png" width="400"></a>
+                            </section>
+                            <section class="card">
+                                <a href="https://github.com/djimageonline/Mad-Libs-Game"><img class="img-projects" src="img/Madlibsv2.png" width="400"></a>
+                            </section>
+                            <section class="card">
+                                <a href="https://github.com/djimageonline/Disney-Match_Game"><img class="img-projects" src="img/Matchgame.png" width="400"></a>
+                            </section>
+                        </div>
+                    </section> -->
                 </div>
                 <div id="contacttest" class="display-section">
 
@@ -172,7 +255,7 @@
                             <h1 class="content-heading"></h1>
                             
                             <!--form------------>
-                            <form method="post" action="contact.php">
+                            <form method="post" action="contact.php" class="form-main">
                                 <div class="input-group">
                                     <label class="input-label">First name*</label>
                                     <input 

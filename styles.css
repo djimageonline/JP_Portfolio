@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
 body {
     position: absolute;
     margin: 0 auto;
@@ -55,6 +61,8 @@ div .social-link #contact-svg {
     overflow: hidden;
 }
 
+
+
 .heroBanner h1 {
     margin: auto;
     margin-top: 100px;
@@ -86,6 +94,7 @@ div .social-link #contact-svg {
     margin-left: auto;
     /* margin-right: auto; */
     width: 50%;
+    
 }
 
 #typed-container {
@@ -128,6 +137,7 @@ div .social-link #contact-svg {
         margin-right: 50px;
         width: 50%;
     }
+
 }
 
 
@@ -190,47 +200,149 @@ section#right-skills{
 #projects-section {
     background-color: #1B0E73;
     color: #F5E883;
-
 }
 
-#projects-section img {
-    border-radius: 16px;
-    padding-bottom: 5px;
-    transition: transform 0.25s;
-
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
-#projects-section img:hover{
-    transform: scale(1.5);
-  }
+.btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.btn {
+    background-color: #1B0E73;
+    border: 1px solid ;
+    border-radius: 10px;
+    color:#fff;
+    padding: 8px 16px;
+    text-transform: lowercase;
+    margin-right: 5px;
+    transition: .4s;
+}
 
-  /* adjustment for size of screen */
-  @media (min-width: 768px) {
-    
-    section #main-project-container {
+.btn_container .btn:hover {
+    background-color:#F5E883;
+    color: #1B0E73;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.cards__item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media(min-width: 40rem) {
+    .cards__item {
         display: flex;
+        padding: 1rem;
+        width: 50%;
     }
-    
-    section#left-img{    
-        float: left;
-        margin: 0 auto;
-        margin-right: 30px;
+}
+
+@media(min-width: 56rem) {
+    .cards__item {
+        display: flex;
+        padding: 1rem;
+        width: 33.333%;
     }
-    
-    #projects-section img {
-        border-radius: 16px;
-        transition: transform 0.55s;
+}
+
+.card {
+    background-color:#fff;
+    color: #1B0E73;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.card:hover .card__image  {
+    filter: contrast(100%);
+}
+  
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+  
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    filter: saturate(180%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+}
+
+.card__image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
     }
-    section#right-img{
-        float: right;
-        margin: 0 auto;
-        margin-left: 30px;
+@media(-width: 40rem) {
+    .card__image::before {
+        padding-top: 66.6%;
     }
-    #projects-section img:hover{
-        transform: scale(1.2);
-      }
-      
-  }
+}
+
+
+
+.card_brewr{
+    background-image: url(img/Brewr.png);
+}
+
+
+.card_disney_clone {
+    background-image: url(img/DisneyPlus_clone.png);
+}
+
+.card_mad_libs{
+    background-image: url(img/Madlibsv2.png);
+    }
+
+.card_match_game{
+    background-image: url(img/Matchgame.png);
+    }
+
+.card__title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+
+  
+  
 
 /**************  Contact Section-Navbar ***********/
 
@@ -246,7 +358,7 @@ section#right-skills{
     width:100%;
 }
 
-form {
+.form-main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 16px;
@@ -258,14 +370,14 @@ form {
     
 }
 
-form .input-group label{
+.form-main .input-group label{
     display: block;
     margin-bottom: 5px;
 }
 
 
 
-form .input-group .form-element {
+.form-main .input-group .form-element {
     appearance: none;
     outline: none;
     border: none;
@@ -277,14 +389,14 @@ form .input-group .form-element {
     transition: .04s;
 }
 
-form .input-group .form-element:focus {
+.form-main form .input-group .form-element:focus {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
     background-color: #F5E883;
 }
 
 @media(min-width: 768px) {
   
-    form {
+    .form-main  {
     grid-template-columns: repeat (2, 1fr);
     margin-right: 160px;
     margin-left: 160px;
