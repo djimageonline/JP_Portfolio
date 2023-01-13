@@ -58,7 +58,7 @@ div .social-link #contact-svg {
 
 .header {
     perspective: 100rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -309,6 +309,7 @@ img {
 
 
 
+
 .card_brewr{
     background-image: url(img/Brewr.png);
 }
@@ -400,6 +401,10 @@ img {
     grid-template-columns: repeat (2, 1fr);
     margin-right: 160px;
     margin-left: 160px;
+    }
+
+    .card__image:hover {
+        transform: scale(1.05);
     }
 
 }
