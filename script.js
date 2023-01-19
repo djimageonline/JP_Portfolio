@@ -56,3 +56,9 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+ScrollReveal().reveal(".myName", { delay: 150 });
+ScrollReveal().reveal(".setup", { delay: 150 });
+ScrollReveal().reveal(".typewrite", { delay: 150 });
+ScrollReveal().reveal(".heroBanner", { delay: 150 });
+ScrollReveal().reveal(".inner-content ", { delay: 150 });

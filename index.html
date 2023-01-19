@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="sr">
     <head>
         <title>Johnny Proano</title>
         <meta charset="utf-8">
@@ -9,16 +9,18 @@
         <meta name="description" content="">
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
         <link href="styles.css" rel="stylesheet" type="text/css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Didact+Gothic&family=Indie+Flower&display=swap" rel="stylesheet">
 
-
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal({ reset: true });
+        </script>
+    
     </head>
 
     <body class="scroll-top"
@@ -60,22 +62,22 @@
         <!--Hero Section------->
         <header class="header">
             <section class="" id="hero-section">
-                <div class="heroBanner" id="hero_banner">
-                    <h1>Think it. Code it. <br>
+                <div class="heroBanner load-hidden" id="hero_banner">
+                    <h1 class="think-it">Think it. Code it. <br>
                         Make a <span>difference!</span></h1>
                 </div>
                 
                 <div id="typed-container">
-                    <h3>Johnny Proano</h3>
+                    <h3 class="load-hidden myName">Johnny Proano</h3>
                     <h4>
-                        <a href="" class="typewrite" data-period="2000" data-type='["I am a Software Engineer.", "I code.", "I Love Music.","I build stuff."]'>
+                        <a href="" class="typewrite load-hidden " data-period="2000" data-type='["I am a Software Engineer.", "I code.", "I Love Music.","I build stuff."]'>
                           <span class="wrap"></span>
                         </a>
                     </h4>
                    
                 </div>
                 
-                <img src="img/Headshot-4.png" width="200px" class="img-jp hoverimg">
+                <img src="img/Headshot-4.png" class="img-jp hoverimg">
         
             </section>
         </header>
@@ -87,15 +89,15 @@
                 <div class="display-section" id="missiontest">
                     <p></p>
                 </div>
-                <div class="inner-content">
+                <div class="inner-content load-hidden">
                     <h2>Mission</h2>
 
-                    <p>There is no better feeling than to make a difference in people’s lives, especially through code. I’m committed to applying the foundations of development and engineering to deliver a great user experience.  <br>
+                    <p>I am huge Chicago Bulls fan, a long time music enthusiast, a sucker for all the Star Wars films, and in the process... I fell in love with the creativity coding allows me to have. There is no better feeling than to make a difference in people’s lives, especially through code. I’m committed to applying the foundations of development and engineering to deliver a great user experience.  <br>
                     
                     Think it, code it, make a difference! </p>
                 </div>
         
-                <img src="img/setup.JPG" class="setup">
+                <img src="img/setup.JPG" class="setup load-hidden">
                 <div id="skillstest" class="display-section">
                     <p></p>
                 </div>
@@ -105,32 +107,58 @@
             <!--NEED TO IMPLEMENT NEW ICONS FOR TOOLS-->
         <!--Skills-------------->    
             <section id="skills-section">
-                <div class="inner-content">
+                <div class="inner-content load-hidden">
 
                     <h2>Skills and Toolbox</h2>
                     <section id="main-container">
-                        <section id="left-skills">
-                            <ul>
-                                <li>Ruby</li>
-                                <li>JavaScript</li>
-                                <li>HTML</li>
-                                <li>Boostrap</li>
-                                <li>SQL</li>
-                                <li>Git</li>
-                                <li>FireBase</li>
-                            </ul>
-                        </section>
-                        <section id="right-skills">
-                            <ul>
-                                <li>Ruby on Rails</li>
-                                <li>React</li>
-                                <li>CSS</li>
-                                <li>APIs</li>
-                                <li>Postgres</li>
-                                <li>GitHub</li>
-                                <li>Redux</li>
-                            </ul>
-                        </section>
+                            <div class="skill-cards">
+                                <div class="skill-card">
+                                    <p>Ruby</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Boostrap</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>SQL</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Git</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>FireBase</p>
+                                </div>
+
+                                <div class="skill-card">
+                                    <p>Ruby on Rails</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>React</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>APIs</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Postgres</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>GitHub</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Redux</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Swiper</p>
+                                </div>
+                            </div>
                     </section>
                 
                 </div>
@@ -143,7 +171,7 @@
 
             <!--Projects------------->
             <section id="projects-section">
-                <div class="inner-content">
+                <div class="inner-content load-hidden">
                     <h2>Projects</h2>
                     <ul class="cards">
                         <li class="cards__item">
@@ -228,7 +256,7 @@
 
             <!--Contact------------->
             <section id="contact-section">
-                <div class="inner-content contact-wrapper">
+                <div class="inner-content load-hidden contact-wrapper">
                     <h2>Contact</h2>
             
                     <section class="form-area">
@@ -291,8 +319,6 @@
                 </div>
             </section>
         </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-        </script>
         <script type="text/javascript" src="script.js"></script>
 
     </body>

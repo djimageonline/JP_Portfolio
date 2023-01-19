@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* html.sr .load-hidden {
+    visibility: hidden;
+} */
+
 body {
     position: absolute;
     margin: 0 auto;
@@ -18,7 +22,7 @@ body {
 
 h2 {
     font-family: 'Anton', sans-serif; 
-    font-size: 38pt;
+    font-size: 30pt;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -34,8 +38,8 @@ p {
 }
 
 .navbar-toggler-icon {
-font-size: small;
-color: #1B0E73;
+    font-size: small;
+    color: #1B0E73;
 }
 
 .navbar-nav a{
@@ -43,7 +47,7 @@ color: #1B0E73;
     text-shadow: 0 0 3px #0e4473, 0 0 1px #1B0E73;
     text-align: center;
     padding-bottom: 10px;
-    }
+}
 
 .display-section {
     padding-top: 10px;
@@ -58,23 +62,24 @@ div .social-link #contact-svg {
 
 .header {
     perspective: 100rem;
+    width:100%;
+    height: 100%;
     /* overflow: hidden; */
 }
 
 
-
 .heroBanner h1 {
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 20px;
     text-align: center;
     font-size: 30pt;
     font-family: 'Anton', sans-serif; 
     font-weight: bold;
     opacity: 0;
     animation: moveThinkItBanner 1s .5s forwards;
-    
+}
 
+.think-it {
+    padding-top: 100px;    
 }
 
 .heroBanner h2 {
@@ -90,11 +95,9 @@ div .social-link #contact-svg {
 }
 
 #hero-section .img-jp {
-    display: block;
-    margin-left: auto;
-    /* margin-right: auto; */
-    width: 50%;
-    
+    position:fixed;
+    bottom:0px;
+    width: 100%;
 }
 
 #typed-container {
@@ -108,7 +111,7 @@ div .social-link #contact-svg {
 
 #typed-container h3 {
     line-height: 1em;
-    font-size: 26px;
+    font-size: 40px;
     font-family: 'Anton', sans-serif; 
 }
 
@@ -133,15 +136,18 @@ div .social-link #contact-svg {
     }
 
     
+   
     #hero-section .img-jp {
-        margin-right: 50px;
-        width: 50%;
-    }
+    position:fixed;
+    bottom:0px;
+    width: 60%;
+    left: 50%;
+}
+    
+
+    
 
 }
-
-
-
 
 
 @keyframes moveThinkItBanner {
@@ -171,35 +177,52 @@ div .social-link #contact-svg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 600px;
     padding: 30px;
 }
 
 /**************  Skills Section ***************/
 
-section #main-container {
+
+.skill-cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
 }
 
-section#left-skills{    
-    float: left;
-    margin: 0 auto;
-    margin-right: 30px;
+.skill-card {
+    margin: 8px;
+    padding: 5px;
+    width: 300px;
+    height: 70px;
+    display: grid;
+    grid-template-rows: auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    background-color: #4E2C76;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif; 
+    font-size: larger;
 }
 
-section#right-skills{
-    float: right;
-    margin: 0 auto;
-    margin-left: 30px;
+.skill-card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+    background-color: #F5E883;
+    color: #4E2C76;
+}
 
+.skill-card p {
+    padding-top: 10px;
 }
 
 
 /**************  Projects Section ***************/
 
 #projects-section {
-    background-color: #1B0E73;
-    color: #F5E883;
+    background-color: #8F6A95;
+    color: white;
 }
 
 img {
@@ -406,6 +429,7 @@ img {
     .card__image:hover {
         transform: scale(1.05);
     }
+    
 
 }
 
