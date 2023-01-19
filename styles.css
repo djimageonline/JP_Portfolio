@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
-/* html.sr .load-hidden {
+html.sr .load-hidden {
     visibility: hidden;
-} */
+}
 
 body {
     position: absolute;
     margin: 0 auto;
     padding: 0;
     font-size: 18px;
-    background-color: #F2F2F0;
-    color: #1B0E73;
+    background-color: #FFF6E6;
+    color: #3F464D;
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16pt;
     height: 100vh;
@@ -33,7 +33,7 @@ p {
 
 /**************  NavBar ***************/
 .navbar {
-    background-color: #F2F2F0;
+    background-color: #FFF6E6;
     font-family: 'Anton', sans-serif; 
 }
 
@@ -43,8 +43,8 @@ p {
 }
 
 .navbar-nav a{
-    color: #F5E883;
-    text-shadow: 0 0 3px #0e4473, 0 0 1px #1B0E73;
+    color: #fff7c0;
+    text-shadow: 2px 1px 5px #0e4473, 0 0 1px #3F464D;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -64,7 +64,6 @@ div .social-link #contact-svg {
     perspective: 100rem;
     width:100%;
     height: 100%;
-    /* overflow: hidden; */
 }
 
 
@@ -136,19 +135,14 @@ div .social-link #contact-svg {
     }
 
     
-   
+
     #hero-section .img-jp {
     position:fixed;
     bottom:0px;
     width: 60%;
     left: 50%;
 }
-    
-
-    
-
 }
-
 
 @keyframes moveThinkItBanner {
     0% {
@@ -165,7 +159,7 @@ div .social-link #contact-svg {
 /**************  Mission Section ***************/
 
 #mission-section {
-    background-color: #F5E883;
+    background-color: #7ECEFC;
 
 }
 
@@ -177,7 +171,7 @@ div .social-link #contact-svg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 500px;
     padding: 30px;
 }
 
@@ -200,7 +194,7 @@ div .social-link #contact-svg {
     border-radius: 10px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.2s;
-    background-color: #4E2C76;
+    background-color: #3F464D;
     color: white;
     font-family: 'Didact Gothic', sans-serif; 
     font-size: larger;
@@ -209,7 +203,7 @@ div .social-link #contact-svg {
 .skill-card:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.01);
-    background-color: #F5E883;
+    background-color: #fff7c0;
     color: #4E2C76;
 }
 
@@ -221,8 +215,8 @@ div .social-link #contact-svg {
 /**************  Projects Section ***************/
 
 #projects-section {
-    background-color: #8F6A95;
-    color: white;
+    background-color: #FF8066;
+    color: #FFF6E6;
 }
 
 img {
@@ -238,7 +232,7 @@ img {
 }
   
 .btn {
-    background-color: #1B0E73;
+    background-color: #3F464D;
     border: 1px solid ;
     border-radius: 10px;
     color:#fff;
@@ -252,8 +246,6 @@ img {
     background-color:#F5E883;
     color: #1B0E73;
 }
-
-
 
 .cards {
     display: flex;
@@ -285,7 +277,7 @@ img {
 }
 
 .card {
-    background-color:#fff;
+    background-color:#FFF6E6;
     color: #1B0E73;
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
@@ -375,7 +367,7 @@ img {
 #contact-section {
     width: 100%;
     height: 100%vh;
-    background-color: #F5E883;
+    background-color: #FFF6E6 ;
 }
 
 .inner-content {
@@ -386,7 +378,7 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 16px;
-    background-color: white;
+    background-color: #7ECEFC;
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
@@ -448,8 +440,8 @@ textarea {
     border: none;
     background: none;
     padding: 12px 16px;
-    background-color: #1B0E73;
-    color: white;
+    background-color: #3F464D;
+    color:#FFF6E6;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
@@ -457,8 +449,8 @@ textarea {
 }
 
 .submit-group input[type="submit"]:hover {
-    background-color: #F5E883;
-    color: #1B0E73;
+    background-color: #FFF6E6;
+    color: #3F464D;
 }
 
 
@@ -472,12 +464,12 @@ section#contact-svg {
 section#contact-svg i {
     font-size: 20px;
     margin: 10px;
-    color: #1B0E73;
+    color: #3F464D;
     transition-duration: .3s;
 }
 
 section#contact-svg i:hover {
-    color: #F5E883;
+    color: #FFF6E6;
     text-shadow: 0 0 3px #1B0E73;
 }
 
