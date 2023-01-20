@@ -39,7 +39,7 @@ p {
 
 .navbar-toggler-icon {
     font-size: small;
-    color: #1B0E73;
+    color: #3F464D;
 }
 
 .navbar-nav {
@@ -49,9 +49,9 @@ p {
 
 .navbar-nav a{
     color: #d4ffbd;
-    text-shadow: 2px 1px 5px #0e4473, 0 0 1px #3F464D;
+    text-shadow: 0 0 5px #3F464D, 0 0 1px #c9c9c9;
     text-align: center;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .display-section {
@@ -95,7 +95,7 @@ div .social-link #contact-svg {
 
 #hero-section span {
     color: #d4ffbd;
-    text-shadow: 0 0 3px #1B0E73, 0 0 5px #1B0E73;
+    text-shadow: 0 0 5px #3F464D, 0 0 1px #c9c9c9;
 }
 
 #hero-section .img-jp {
