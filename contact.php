@@ -1,23 +1,60 @@
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("first-name","req","Please provide your first name");
+frmvalidator.addValidation("last-name","req","Please provide your last name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
 
 <?php
+$errors = '';
+$myemail = 'jproano22@yahoo.com';//<-----Put Your email address here.
+if(empty($_POST['first-name'])  ||
+   empty($_POST['last-name'])  || 
+   empty($_POST['email']) || 
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
+}
+
+$firstname = $_POST['first-name'];
+$lastname = $_POST['last-name']; 
+$email = $_POST['email']; 
+$message = $_POST['message']; 
+
+if (!preg_match(
+  "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+$email))
+{
+    $errors .= "\n Error: Invalid email address";
+}
+
 // Get data from form
 // $mail_host = "johnnyproano.com"; 
-$firstname = $_POST['first-name'];
-$lastname = $_POST['last-name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
- 
-$subject = "New Form Submission from Dev Site";
-$to = "jproano22@yahoo.com";
 
-$txt ="First Name = ". $firstname . "\r\n Last Name = ". $lastname . "\r\n   Email = ". $email . "\r\n Message =" . $message;
- 
-$headers = "From: $to \r\n";
-$headers .= "Reply-To: $email \r\n";
+if( empty($errors))
 
-mail($to, $subject, $txt, $headers);
+{
 
+$to = $myemail;
 
-// Redirect to
-header("Location: index.html");
-?>
+$email_subject = "Contact form submission: $firstname $lastname ";
+
+$email_body = "You have received a new message. ".
+
+" Here are the details:\n Name: $firstname $lastname\n ".
+
+"Email: $email\n Message \n $message";
+
+$headers = "From: $myemail\n";
+
+$headers .= "Reply-To: $email";
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the 'thank you' page
+
+header('Location: index.html');
+
+}
