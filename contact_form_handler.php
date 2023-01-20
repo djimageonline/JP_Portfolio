@@ -1,11 +1,3 @@
-<script language="JavaScript">
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("first-name","req","Please provide your first name");
-frmvalidator.addValidation("last-name","req","Please provide your last name");
-frmvalidator.addValidation("email","req","Please provide your email");
-frmvalidator.addValidation("email","email",
-  "Please enter a valid email address");
-</script>
 
 <?php
 $errors = '';
