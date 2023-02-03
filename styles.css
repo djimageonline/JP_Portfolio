@@ -57,8 +57,9 @@ p {
     padding-top: 10px;
 }
 
+
 div .social-link #contact-svg {
-    float:right;
+      border-top: 1px solid #3F464D;
 }
 
 .resume {
@@ -163,6 +164,10 @@ div .social-link #contact-svg {
         left: 50%;
     }
 
+    div .social-link #contact-svg {
+    float:right;
+    border-top: none;
+    }
     
 }
 
