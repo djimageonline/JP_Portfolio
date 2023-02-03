@@ -61,6 +61,13 @@ div .social-link #contact-svg {
     float:right;
 }
 
+.resume {
+    margin-left: 7px;
+    color: #3F464D;
+    text-shadow: 0 0 5px #d4ffbd, 0 0 1px #c9c9c9;
+    font-size: 14pt;
+}
+
 
 /**************  Hero Section ***************/
 
