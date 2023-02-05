@@ -202,7 +202,7 @@ div .social-link #contact-svg {
     width: 500px;
     /* box-shadow: 5px 10px #888888; */
     margin-bottom: 40px;
-    box-shadow: 5px 10px #FF8066;
+    box-shadow: 5px 10px #c4f5fc;
 }
 
 @media (min-width: 900px) {
@@ -212,7 +212,7 @@ div .social-link #contact-svg {
         margin-right: auto;
         width: 500px;
         max-width: 450px;
-        box-shadow: 5px 10px #FF8066;
+        box-shadow: 5px 10px #c4f5fc;
     }
 
     .about-img {
@@ -271,8 +271,8 @@ div .social-link #contact-svg {
 /**************  Projects Section ***************/
 
 #projects-section {
-    background-color: #FF8066;
-    color: #FFF6E6;
+    background-color: #c4f5fc;
+    color: #3F464D;
 }
 
 img {
@@ -299,7 +299,7 @@ img {
 }
 
 .btn_container .btn:hover {
-    background-color: #d4ffbd;
+    background-color: #c4f5fc;
     color: #1B0E73;
 }
 
