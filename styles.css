@@ -382,21 +382,25 @@ img {
 
 
 .card_brewr{
-    background-image: url(img/Brewr.png);
+    background-image: url("img/Brewr.png");
 }
 
 
 .card_disney_clone {
-    background-image: url(img/DisneyPlus_clone.png);
+    background-image: url("img/DisneyPlus_clone.png");
 }
 
 .card_mad_libs{
-    background-image: url(img/Madlibsv2.png);
-    }
+    background-image: url("img/Madlibsv2.png");
+}
 
 .card_match_game{
-    background-image: url(img/Matchgame.png);
-    }
+    background-image: url("img/Matchgame.png");
+}
+
+.card_blackjack {
+    background-image: url("img/blackjack.png");
+}
 
 .card__title {
     font-size: 1.25rem;
