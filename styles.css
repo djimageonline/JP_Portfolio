@@ -118,9 +118,10 @@ div .social-link #contact-svg {
 }
 
 
+
 #hero-section .img-jp {
     position:fixed;
-    bottom:0px;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -143,12 +144,39 @@ div .social-link #contact-svg {
     text-decoration: none;
 }
 
-@media (min-width: 768px) {
+
+@media screen and (min-width: 530px) {
+    #hero-section .img-jp {
+        position:fixed;
+        bottom:0px;
+        width: 80%;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    div .social-link #contact-svg {
+        float:right;
+        border-top: none;
+    }
+
+    #hero-section .img-jp {
+        position:fixed;
+        bottom:0px;
+        width: 60%;
+        left: 20%;
+    }
+    
+}
+
+
+@media (min-width: 970px) {
     #typed-container h3 {
         line-height: 1em;
         font-size: 70px;
         font-family: 'Anton', sans-serif; 
         white-space: nowrap;
+        
     }   
 
     #typed-container {
@@ -160,10 +188,9 @@ div .social-link #contact-svg {
     #hero-section .img-jp {
         position:fixed;
         bottom:0px;
-        width: 60%;
-        left: 40%;
+        width: 50%;
+        left: 50%;
     }
-
 
     div .social-link #contact-svg {
     float:right;
@@ -171,6 +198,8 @@ div .social-link #contact-svg {
     }
     
 }
+
+
 
 @keyframes moveThinkItBanner {
     0% {
@@ -233,7 +262,7 @@ div .social-link #contact-svg {
     width: 50px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1205px) {
     .setup {
         display: block;
         margin-left: auto;
@@ -252,9 +281,9 @@ div .social-link #contact-svg {
         display: inline;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 20px;
         max-height: 500px;
-        margin: 10px 20px;
+        margin: -25px 35px;
     }
 }
 
