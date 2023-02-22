@@ -2,30 +2,11 @@
 <?php
 $errors = '';
 $myemail = 'jproano22@yahoo.com';//<-----Put Your email address here.
-if(empty($_POST['full-name'])  ||
-   empty($_POST['email']) || 
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: all fields are required";
-}
 
 $fullname = $_POST['full-name'];
 $email = $_POST['email']; 
 $message = $_POST['message']; 
 
-if (!preg_match(
-  "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-$email))
-{
-    $errors .= "\n Error: Invalid email address";
-}
-
-// Get data from form
-// $mail_host = "johnnyproano.com"; 
-
-if( empty($errors))
-
-{
 
 $to = $myemail;
 
@@ -37,14 +18,34 @@ $email_body = "You have received a new message. ".
 
 "Email: $email\n Message \n $message";
 
-$headers = "From: $myemail\n";
+$headersFrom = "From: $myemail\n";
 
-$headers .= "Reply-To: $email";
+$headersTo .= "Reply-To: $email";
 
-mail($to,$email_subject,$email_body,$headers);
+mail($to,$email_subject,$email_body,$headersFrom, $headersTo);
 
 //redirect to the 'thank you' page
 
-header('Location: contact-form-thank-you.html');
+echo'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
+        <p class="back">Go back to the <a href="index.html">homepage</a>.</p>
+        
+    </div>
+</body>
+</html>
+';
 
-}
+
+?>
