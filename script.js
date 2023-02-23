@@ -57,6 +57,8 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
+// Scroll Reveal
+
 ScrollReveal().reveal(".myName", { delay: 350 });
 ScrollReveal().reveal(".setup", { delay: 350 });
 ScrollReveal().reveal(".typewrite", { delay: 350 });

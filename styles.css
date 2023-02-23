@@ -137,7 +137,6 @@ div .social-link #contact-svg {
     margin: 0 auto;
     margin-top: 70px;
     width: 300px;
-    /* padding: 10px; */
 }
 
 #typed-container h3 {
@@ -186,14 +185,12 @@ div .social-link #contact-svg {
     #typed-container {
         float: left;
         flex: 1;
-        display: inline-block;
         margin-left: 100px;
         width: 440px;
     }
 
     .img-contain {
         flex: 1;
-        display: inline-block;
         width: 300px;
         margin-bottom: 100px;
         /* margin-right: 50px; */
@@ -237,22 +234,20 @@ div .social-link #contact-svg {
 }
 
 .inner-content {
-    padding: 40px;
+    padding: 30px;
+    margin-bottom: 10px;
 }
 
 .setup {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50px;
     width: 300px;
-    /* box-shadow: 5px 10px #888888; */
     margin-bottom: 40px;
     box-shadow: 5px 10px 10px #131c1d;
 }
 
 .highlight-words {
-    background-color: ;
     color: #7c70d3;
     display: inline;
     
@@ -279,12 +274,18 @@ div .social-link #contact-svg {
 }
 
 @media (min-width: 1006px) {
+
+    .inner-content {
+        margin-bottom: 20px;
+    }  
+
     .setup {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 350px;
-        max-width: 450px;
+        width: 300px;
+        height: 300px;
+        max-width: 500px;
         box-shadow: 5px 10px 10px #3F464D;
     }
 
