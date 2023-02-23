@@ -24,6 +24,7 @@ $headersTo .= "Reply-To: $email";
 
 mail($to,$email_subject,$email_body,$headersFrom, $headersTo);
 
+
 //redirect to the 'thank you' page
 
 echo'
