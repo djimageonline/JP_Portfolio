@@ -167,6 +167,10 @@ div .social-link #contact-svg {
 
 
 @media (min-width: 1000px) {
+    .display-section {
+        padding-top: 20px;
+    }
+
      #typed-container h3 {
         line-height: 1em;
         font-size: 70px;
@@ -284,7 +288,7 @@ div .social-link #contact-svg {
         margin-left: auto;
         margin-right: auto;
         width: 300px;
-        height: 300px;
+        height: 200px;
         max-width: 500px;
         box-shadow: 5px 10px 10px #3F464D;
     }
