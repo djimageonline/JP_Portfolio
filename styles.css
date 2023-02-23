@@ -117,15 +117,21 @@ div .social-link #contact-svg {
     justify-content: end;
 }
 
-
-
-#hero-section .img-jp {
-    position:fixed;
-    bottom: 0px;
-    width: 100%;
+.img-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
+#hero-section .img-jp {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
 #typed-container {
+    position: relative;
     margin: 0 auto;
     margin-top: 70px;
     width: 300px;
@@ -145,56 +151,59 @@ div .social-link #contact-svg {
 }
 
 
-@media screen and (min-width: 530px) {
+/* @media screen and (min-width: 530px) {
     #hero-section .img-jp {
-        position:fixed;
-        bottom:0px;
-        width: 80%;
-        left: 20%;
+        
     }
-}
+} */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     div .social-link #contact-svg {
         float:right;
         border-top: none;
-    }
-
-    #hero-section .img-jp {
-        position:fixed;
-        bottom:0px;
-        width: 60%;
-        left: 20%;
-    }
-    
+    }    
 }
 
 
-@media (min-width: 970px) {
-    #typed-container h3 {
+@media (min-width: 1006px) {
+     #typed-container h3 {
         line-height: 1em;
         font-size: 70px;
         font-family: 'Anton', sans-serif; 
         white-space: nowrap;
-        
-    }   
-
-    #typed-container {
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-top: 200px;
+    }  
+    
+    .image-name-container{
+        display: flex;
+        margin-top: 70px;
+        padding: 50px;
     }
 
-    #hero-section .img-jp {
-        position:fixed;
-        bottom:0px;
-        width: 50%;
-        left: 50%;
+    #typed-container {
+        float: left;
+        flex: 1;
+        display: inline-block;
+        margin-left: 150px;
+        width: 440px;
+    }
+
+    .img-contain {
+        flex: 1;
+        display: inline-block;
+        width: 300px;
+        margin-bottom: 100px;
+        /* margin-right: 50px; */
+        float: right;
+
+    } 
+
+    .img-jp {
+        width: 500px
     }
 
     div .social-link #contact-svg {
-    float:right;
-    border-top: none;
+        float:right;
+        border-top: none;
     }
     
 }
