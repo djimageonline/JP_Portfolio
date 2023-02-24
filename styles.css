@@ -234,7 +234,6 @@ div .social-link #contact-svg {
     width:100%;
     height: 100%;
     
-
 }
 
 .inner-content {
@@ -279,6 +278,7 @@ div .social-link #contact-svg {
 
 @media (min-width: 1006px) {
 
+
     .inner-content {
         margin-bottom: 20px;
     }  
@@ -288,7 +288,7 @@ div .social-link #contact-svg {
         margin-left: auto;
         margin-right: auto;
         width: 300px;
-        height: 200px;
+        height: 300px;
         max-width: 500px;
         box-shadow: 5px 10px 10px #3F464D;
     }
@@ -304,7 +304,7 @@ div .social-link #contact-svg {
         align-items: center;
         padding: 10px 10px;
         max-height: 500px;
-        margin: -25px 35px;
+        margin: -20px 70px;
     }
 }
 

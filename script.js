@@ -59,8 +59,12 @@ window.onload = function () {
 
 // Scroll Reveal
 
-ScrollReveal().reveal(".myName", { delay: 350 });
-ScrollReveal().reveal(".setup", { delay: 350 });
-ScrollReveal().reveal(".typewrite", { delay: 350 });
-ScrollReveal().reveal(".heroBanner", { delay: 350 });
-ScrollReveal().reveal(".inner-content ", { delay: 350 });
+ScrollReveal().reveal(".myName", { delay: 300 });
+ScrollReveal().reveal(".setup", { delay: 300 });
+ScrollReveal().reveal(".typewrite", { delay: 300 });
+ScrollReveal().reveal(".heroBanner", { delay: 300 });
+ScrollReveal().reveal(".inner-content ", { delay: 300 });
+ScrollReveal({distance: '700px'})
+ScrollReveal().reveal(".skill-card", { origin: 'right' });
+ScrollReveal().reveal(".card", { origin: 'left' });
+// ScrollReveal().reveal(".card", { delay: 300 });
