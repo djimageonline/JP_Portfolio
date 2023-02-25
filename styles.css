@@ -276,9 +276,14 @@ div .social-link #contact-svg {
     width: 50px;
 }
 
-@media (min-width: 1006px) {
+@media (min-width: 1160px) {
 
-
+    #mission-section {
+        background-color: #d4ffbd;
+        width:100%;
+        height: 100%;
+        min-height: 80vh;        
+    }
     .inner-content {
         margin-bottom: 20px;
     }  
@@ -296,15 +301,18 @@ div .social-link #contact-svg {
     .about-img {
         display: flex;
         margin-top: 70px;
+        margin-left: 100px;
     }
 
     .paragraph-me {
         display: inline;
         justify-content: center;
         align-items: center;
-        padding: 10px 10px;
+        padding: 10px 5px;
         max-height: 500px;
-        margin: -20px 70px;
+        margin: -20px 80px;
+        text-align: left;
+
     }
 }
 

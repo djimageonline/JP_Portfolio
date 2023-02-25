@@ -64,7 +64,7 @@ ScrollReveal().reveal(".setup", { delay: 300 });
 ScrollReveal().reveal(".typewrite", { delay: 300 });
 ScrollReveal().reveal(".heroBanner", { delay: 300 });
 ScrollReveal().reveal(".inner-content ", { delay: 300 });
-ScrollReveal({distance: '10px'})
-ScrollReveal().reveal(".skill-card", { origin: 'right' });
-ScrollReveal().reveal(".card", { origin: 'left' });
+ScrollReveal({ distance: "10px" });
+ScrollReveal().reveal(".skill-card", { origin: "right" });
+ScrollReveal().reveal(".card", { origin: "left" });
 // ScrollReveal().reveal(".card", { delay: 300 });
