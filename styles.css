@@ -180,10 +180,9 @@ div .social-link #contact-svg {
     
     .image-name-container{
         display: flex;
-        margin-top: 70px;
         padding: 50px;
-        margin-left: 90px;
-        margin-right: 90px;
+        margin: 70px auto 0 auto;
+        max-width: 1000px;
     }
 
     #typed-container {
@@ -274,6 +273,12 @@ div .social-link #contact-svg {
 
 .enjoy-pics {
     width: 50px;
+}
+
+.paragraph-me {
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 @media (min-width: 1160px) {
@@ -402,7 +407,7 @@ img {
     padding: 1rem;
 }
 
-@media(min-width: 40rem) {
+@media(min-width: 45rem) {
     .cards__item {
         display: flex;
         padding: 1rem;
@@ -410,7 +415,7 @@ img {
     }
 }
 
-@media(min-width: 56rem) {
+@media(min-width: 68rem) {
     .cards__item {
         display: flex;
         padding: 1rem;
@@ -500,6 +505,7 @@ img {
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
+    text-align: left;
 }
 
 
@@ -561,8 +567,8 @@ img {
   
     .form-main  {
     grid-template-columns: repeat (2, 1fr);
-    margin-right: 160px;
-    margin-left: 160px;
+    margin: 0 auto;
+    max-width: 700px;
     }
 
     .card__image:hover {
