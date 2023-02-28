@@ -226,6 +226,8 @@ div .social-link #contact-svg {
     }
 }
 
+
+
 /**************  Mission Section ***************/
 
 #mission-section {
@@ -255,9 +257,7 @@ div .social-link #contact-svg {
     
 }
 
-.gist {
-    color: #897aff;
-}
+
 
 .logo-size {
     width: 20px;
@@ -281,7 +281,7 @@ div .social-link #contact-svg {
     margin-right: 35px;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1300px) {
 
     #mission-section {
         background-color: #d4ffbd;
