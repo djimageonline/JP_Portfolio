@@ -626,3 +626,24 @@ section#contact-svg i:hover {
     text-shadow: 0 0 3px #1B0E73;
 }
 
+/********** Thank you page ***********/
+
+#thanks {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#thank-you {
+    text-align: center;
+    padding: 0 100px;
+}
+
+#portfolio-link {
+    text-align: center;
+}
+
+.img-jp2 {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
