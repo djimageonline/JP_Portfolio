@@ -231,7 +231,8 @@ div .social-link #contact-svg {
 /**************  Mission Section ***************/
 
 #mission-section {
-    background-color: #d4ffbd;
+    /* background-color: #d4ffbd; */
+    background-image: linear-gradient(#d4ffbd, #FFF);
     width:100%;
     height: 100%;
     
@@ -362,7 +363,7 @@ div .social-link #contact-svg {
 /**************  Projects Section ***************/
 
 #projects-section {
-    background-color: #c4f5fc;
+    background-image: linear-gradient(#5DA4D9, #FFF);
     color: #3F464D;
 }
 
@@ -631,6 +632,8 @@ section#contact-svg i:hover {
 #thanks {
     text-align: center;
     margin: 0 auto;
+    background-image: linear-gradient(#fff, #d4ffbd);
+
 }
 
 #thank-you {
