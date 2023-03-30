@@ -494,6 +494,10 @@ img {
     background-image: url("img/blackjack.png");
 }
 
+.card_chatr {
+    background-image: url("img/chatr.png");
+}
+
 .card__title {
     font-size: 1.25rem;
     font-weight: 300;
