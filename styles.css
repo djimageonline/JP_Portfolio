@@ -152,11 +152,6 @@ div .social-link #contact-svg {
 }
 
 
-/* @media screen and (min-width: 530px) {
-    #hero-section .img-jp {
-        
-    }
-} */
 
 @media (min-width: 768px) {
     div .social-link #contact-svg {
@@ -496,6 +491,10 @@ img {
 
 .card_chatr {
     background-image: url("img/chatr.png");
+}
+
+.card_food-order {
+    background-image: url("img/jpTavern.png");
 }
 
 .card__title {
