@@ -497,6 +497,10 @@ img {
     background-image: url("img/jpTavern.png");
 }
 
+.card_jps-blog {
+    background-image: url("img/blog.png"); 
+}
+
 .card__title {
     font-size: 1.25rem;
     font-weight: 300;
