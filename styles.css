@@ -51,7 +51,6 @@ p {
     color: #d4ffbd;
     text-shadow: 0 0 5px #3F464D, 0 0 1px #c9c9c9;
     text-align: center;
-    /* padding-bottom: 10px; */
 }
 
 .display-section {
@@ -152,15 +151,6 @@ div .social-link #contact-svg {
 }
 
 
-
-@media (min-width: 768px) {
-    div .social-link #contact-svg {
-        float:right;
-        border-top: none;
-    }    
-}
-
-
 @media (min-width: 1000px) {
     .display-section {
         padding-top: 20px;
@@ -191,7 +181,6 @@ div .social-link #contact-svg {
         flex: 1;
         width: 300px;
         margin-bottom: 100px;
-        /* margin-right: 50px; */
         float: right;
 
     } 
@@ -226,7 +215,6 @@ div .social-link #contact-svg {
 /**************  Mission Section ***************/
 
 #mission-section {
-    /* background-color: #d4ffbd; */
     background-image: linear-gradient(#d4ffbd, #FFF);
     width:100%;
     height: 100%;
@@ -252,8 +240,6 @@ div .social-link #contact-svg {
     display: inline;
     
 }
-
-
 
 .logo-size {
     width: 20px;
@@ -501,6 +487,10 @@ img {
     background-image: url("img/blog.png"); 
 }
 
+.card_jps-color-scheme {
+    background-image: url(img/color-scheme.png);
+}
+
 .card__title {
     font-size: 1.25rem;
     font-weight: 300;
@@ -572,7 +562,11 @@ img {
 }
 
 @media(min-width: 768px) {
-  
+    div .social-link #contact-svg {
+        float:right;
+        border-top: none;
+    }  
+
     .form-main  {
     grid-template-columns: repeat (2, 1fr);
     margin: 0 auto;
@@ -581,6 +575,11 @@ img {
 
     .card__image:hover {
         transform: scale(1.05);
+    }
+
+    .paragraph-me {
+        max-width: 790px;
+        margin: 0 auto;
     }
     
 
