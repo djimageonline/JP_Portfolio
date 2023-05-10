@@ -488,7 +488,11 @@ img {
 }
 
 .card_jps-color-scheme {
-    background-image: url(img/color-scheme.png);
+    background-image: url("img/color-scheme.png");
+}
+
+.card_movie-watchlist {
+    background-image: url("skills-img/movieWatchlist.png");
 }
 
 .card__title {
